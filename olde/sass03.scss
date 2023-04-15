@@ -1,0 +1,58 @@
+$size:100px;
+$color-orange:orange;
+$font:30px;
+$color-white:#fff;
+
+
+.container{
+  width:$size * 2;
+  background-color:$color-orange;
+  padding:100px;
+  margin-bottom:$size;
+  .item{
+    width:$size;
+    height:$size;
+    color:$color-white;
+    background-color:yellow;
+    font-size:$font;
+  }
+}
+.container1{
+  $size:200px;
+  width:$size * 2;
+  background-color:$color-orange;
+  padding:100px;
+  .item{
+    $size:100px;
+    width:$size;
+    height:$size;
+    color:$color-white;
+    background-color:yellow;
+    font-size:$font;
+  }
+}
+
+
+//  연산자
+.counter{
+  width:100px + 100px;
+  height:200px - 20px;
+  font-size:10px * 2;
+  margin: (100px / 2);
+  padding:20px % 3;
+  background-color:green;
+  color:#fff;
+}
+.counter01{
+  $size:500px;
+  width:$size;
+  // 단위가 달라질때 100px - 20px
+  // height:$size - 5em;
+  height: calc($size - 5em);
+  // height: calc(500px - 5em);
+  font-size:$font * 2;
+  margin:(($size * 3) /2);
+  padding:20px %3;
+  background-color:skyblue;
+  color:$color-white;
+}

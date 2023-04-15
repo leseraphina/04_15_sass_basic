@@ -1,0 +1,43 @@
+.container{
+  ul{
+    background-color:orange;
+    li{
+      background-color:red;
+      span{
+        color:#fff;
+        font-size:25px;
+      }
+    }
+  }
+  // 자식 > 뒤에는 공간 문자
+  > ul{
+    background-color:yellow;
+  }
+}
+// 상위 선택자 가져오기 :&
+.no{
+  background-color:pink;
+  &_01{color:red;}
+  &_02{color:orange;}
+  &_03{color:green;}
+  &_04{color:skyblue;}
+}
+
+// 네임스페이스: 속성
+.box{
+  font:{
+    weight:bold;
+    size:30px;
+    family:Times,serif;
+  };
+  padding:{
+    top:10px;
+    bottom:40px;
+  };
+  margin:{
+    top:30px;
+    left:50px;
+  };
+  background-color:orange;
+  color:#fff;
+}

@@ -1,0 +1,39 @@
+@mixin box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$size:100px;
+$color-orange:orange;
+
+.container{
+  width:$size * 2;
+  height:$size * 2;
+  background-color:$color-orange;
+  margin-bottom:$size / 2;
+   @include box;
+  .item{
+    width:$size;
+    height:$size;
+    @include box;
+    background-color:#fff;
+    color:$color-orange
+  }
+}
+
+.box{
+  width:$size * 3 ;
+  height:$size * 3;
+  background-color:yellow;
+  color:$color-orange;
+  @include box;
+  .data{
+    width:$size;
+    height:$size;
+    background-color:green;
+    color:#fff;
+    @include box;
+  }
+
+}
