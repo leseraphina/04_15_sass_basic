@@ -1,0 +1,19 @@
+// 칼라함수를 사용하기
+
+.box{
+  $color:orange;
+  width:200px;
+  height:100px;
+  margin-bottom:20px;
+  background-color:$color;
+  &.data{
+    // background-color:mix($color,red);
+    // background-color:lighten($color,20%);
+    // background-color:darken($color,20%);
+    // background-color:saturate($color,90%);
+    // background-color:desaturate($color,30%);
+    // background-color:grayscale($color);
+    // background-color:invert($color);
+    // background-color:rgba($color,0.5);
+  }
+}

@@ -1,0 +1,29 @@
+// 자료형 종류
+$number:1; //.5, 100px, 1em
+$string:bold; //relative,"img/b.png"
+$color:red; //blue,#ff00bb, rgba()
+$boolean: true;
+$null:null;
+
+$list:orange,skyblue,yellow;
+//  배열
+$map:(
+  1:orange,
+  2:skyblue,
+  3:yellow
+);
+
+
+
+// @each
+// @each $c in $list{
+//   .box{
+//     color:$c;
+//   }
+// }
+
+@each $k,$v in $map{
+  .box-#{$k}{
+    color:$v;
+  }
+}

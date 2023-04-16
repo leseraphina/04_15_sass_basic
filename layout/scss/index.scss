@@ -1,0 +1,6 @@
+// @import url('./header.scss');
+// @import './header.scss';
+@import './header.scss','./main.scss','./footer.scss';
+body{
+  background-color:#333;
+}

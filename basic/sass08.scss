@@ -1,0 +1,25 @@
+@mixin center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+@function ration($size,$ration){
+  @return $size * $ration;
+}
+.box{
+  $width:100px;
+  $color:orange;
+  width:$width;
+  // height:함수(인수,인수);
+  height:ration($width,1/2);
+  @include center;
+  background-color:$color;
+}
+.box01{
+  $width:200px;
+  $color:pink;
+  width:$width;
+  height:ration($width,1/5);
+  @include center;
+  background-color:$color;
+}
